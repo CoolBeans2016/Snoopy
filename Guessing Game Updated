@@ -1,0 +1,18 @@
+import random
+print(random.randint(1, 100))
+guessT = 0
+n = int(guessT)
+while guessT < 3:
+  print(guessT)
+  print("Take a wild guess")
+  guessT += 1
+if guessT == n +1 or guessT == n -1:
+	print("Your getting HOT!")
+if guessT > n +2 or guessT < n -2:
+	print("Brrrrrrr, Your getting COLD!")
+if guessT == n +2 or guessT == n -2:
+	print("Your getting WARMER!")
+if guessT == n:
+	print("Bravo!, You have guessed the correct number")
+if guessT != n:
+	print("Sorry you have ran out of tries")
